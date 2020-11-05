@@ -1,0 +1,17 @@
+<div class="container" style="text-align: center">
+  <button routerLink="/">Back To Home</button>
+  <h1>Detailed Image</h1>
+  <div class="mainimage">
+    <button
+      class="btn btn-primary"
+      style="margin: 10px"
+      (click)="showImage('prev')"
+    >
+      Prev
+    </button>
+    <img [src]="imageName" alt="" />
+    <button class="btn btn-primary" style="margin: 10px" (click)="showImage()">
+      Next
+    </button>
+  </div>
+</div>

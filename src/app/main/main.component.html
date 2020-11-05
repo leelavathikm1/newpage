@@ -1,0 +1,11 @@
+<div class="container">
+  <div
+    appScrolldirective
+    class="grid-container"
+    style="overflow: auto; max-height: 100%"
+  >
+    <div class="grid-item" *ngFor="let item of dataFromApi; let i = index">
+      <img [src]="item" alt="" [routerLink]="['/details', i]" />
+    </div>
+  </div>
+</div>
